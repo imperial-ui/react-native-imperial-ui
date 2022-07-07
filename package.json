@@ -1,0 +1,43 @@
+{
+  "name": "react-native-imperial-ui",
+  "version": "0.0.0",
+  "description": "React native components ",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "postversion": "git tag v0.0.0 && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imperial-ui/react-native-imperial-ui.git"
+  },
+  "keywords": [
+    "React",
+    "react-native",
+    "components",
+    "ui"
+  ],
+  "author": "Abduljeleel Yusuff <abduljeleelng@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imperial-ui/react-native-imperial-ui/issues"
+  },
+  "homepage": "https://github.com/imperial-ui/react-native-imperial-ui#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^28.1.4",
+    "babel-jest": "^28.1.2",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  }
+}
